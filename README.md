@@ -1,35 +1,96 @@
-# React + TypeScript + Vite
+# ⏳ Chronos Pomodoro
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Um aplicativo de gerenciamento de tempo baseado na técnica Pomodoro, desenvolvido com **ReactJS**, **TypeScript** e **Vite** para oferecer uma experiência rápida, tipada, moderna e responsiva.
 
-Currently, two official plugins are available:
+![React](https://shields.io)
+![TypeScript](https://shields.io)
+![Vite](https://shields.io)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📋 Sobre o Projeto
 
-## React Compiler
+O **Chronos Pomodoro** ajuda a manter o foco e aumentar a produtividade dividindo o trabalho em blocos de tempo (geralmente 25 minutos) separados por breves intervalos. 
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### ✨ Funcionalidades
+- **Temporizador Pomodoro:** Ciclos configuráveis de foco, pausa curta e pausa longa.
+- **Controle Total:** Inicie, pause e reinicie o cronômetro facilmente.
+- **Alertas Sonoros/Visuais:** Notificações ao finalizar cada ciclo.
+- **Histórico de Tarefas:** Acompanhamento das sessões concluídas *(opcional - remova se não houver)*.
+- **Interface Responsiva:** Adaptado para uso em desktop e dispositivos móveis.
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+---
 
-## Expanding the Oxlint configuration
+## 🚀 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+Este projeto foi construído utilizando as seguintes ferramentas:
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+- **[ReactJS](https://react.dev)** - Biblioteca para construção de interfaces de usuário.
+- **[TypeScript](https://typescriptlang.org)** - Superset JavaScript com tipagem estática para maior segurança e escalabilidade do código.
+- **[Vite](https://vitejs.dev)** - Ferramenta de build ultrarrápida para desenvolvimento frontend.
+- **CSS3 / Styled-Components / Tailwind** *(ajuste conforme a estilização que você usou)*.
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+---
+
+## 📦 Como rodar o projeto localmente
+
+Siga os passos abaixo para executar o projeto na sua máquina:
+
+### Pré-requisitos
+Certifique-se de ter o **[Node.js](https://nodejs.org)** instalado (versão 18 ou superior recomendada).
+
+### Passo a passo
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com
+   ```
+
+2. **Acesse a pasta do projeto:**
+   ```bash
+   cd chronos-pomodoro-reactjs
+   ```
+
+3. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+   *(Ou use `yarn` / `pnpm install`, caso prefira)*
+
+4. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Acesse no navegador:**
+   Abra o link exibido no terminal (geralmente `http://localhost:5173`).
+
+---
+
+## 🛠️ Scripts Disponíveis
+
+No diretório do projeto, você pode executar:
+
+- `npm run dev`: Inicia o aplicativo em modo de desenvolvimento.
+- `npm run build`: Compila o TypeScript e gera o build de produção na pasta `dist`.
+- `npm run preview`: Visualiza localmente a versão gerada pelo build de produção.
+
+---
+
+## 🤝 Contribuição
+
+Contribuições são sempre bem-vindas! Se quiser melhorar este projeto:
+
+1. Faça um *Fork* do repositório.
+2. Crie uma *Branch* para sua modificação (`git checkout -b feature/NovaFuncionalidade`).
+3. Faça o *Commit* das suas alterações (`git commit -m 'Adiciona nova funcionalidade'`).
+4. Faça o *Push* para a *Branch* (`git push origin feature/NovaFuncionalidade`).
+5. Abra um *Pull Request*.
+
+---
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+Desenvolvido por **[Lucio Flavio](https://github.com/lucioflaviocmatias90)** 🚀
