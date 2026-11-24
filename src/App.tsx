@@ -1,11 +1,11 @@
-import './styles/theme.css';
-import './styles/global.css';
+import "./styles/theme.css";
+import "./styles/global.css";
 
-import { Container } from './components/Container';
-import { Logo } from './components/Logo';
-import { Menu } from './components/Menu';
-import { CountDown } from './components/CountDown';
-import { DefaultInput } from './components/DefaultInput';
+import { Container } from "./components/Container";
+import { Logo } from "./components/Logo";
+import { Menu } from "./components/Menu";
+import { CountDown } from "./components/CountDown";
+import { DefaultInput } from "./components/DefaultInput";
 
 function App() {
   return (
@@ -22,7 +22,12 @@ function App() {
       <Container>
         <form className="form" action="">
           <div className="formRow">
-            <DefaultInput id="meuInput" type="text" labelText="Tarefa" />
+            <DefaultInput
+              id="meuInput"
+              type="text"
+              labelText="Tarefa"
+              placeholder="Digite sua tarefa"
+            />
           </div>
           <div className="formRow">
             <p>Ciclos</p>
@@ -34,7 +39,7 @@ function App() {
         </form>
       </Container>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
